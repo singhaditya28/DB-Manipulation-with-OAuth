@@ -1,0 +1,18 @@
+{% block main %}
+
+<form action = "{{url_for('addrec')}}" method="post">
+	<center>
+		<p>
+			Sepal Length(One Digit Decimal) : <input type="text" name="sepal_len" pattern="^\d*(\.\d{0,1})?$" step="0.1" required> <br>
+			Sepal Width (One Digit Decimal) :  <input type="text" name="sepal_wid" pattern="^\d*(\.\d{0,1})?$" step="0.1" required> <br>
+			Petal Length(One Digit Decimal) : <input type="text" name="petal_len" pattern="^\d*(\.\d{0,1})?$" step="0.1" required><br>
+			Petal Width (One Digit Decimal) :  <input type="text" name="petal_wid" pattern="^\d*(\.\d{0,1})?$" step="0.1" required><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Class (Text) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp; <input type="text" name="Class"  required><br>
+		</p><br><br>
+		<p>
+			<input type="submit" value = "Submit">
+		</p>
+	</center>
+</form>
+
+{% endblock %}
